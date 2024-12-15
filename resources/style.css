@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body{
+    background: whitesmoke;
+}
+
+.logo {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+    gap: 5px;
+}
+
+.logo span{
+    font-weight: bold;
+    padding-right: 25px;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: orangered;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: -10px; /* Shift image left */
+    display: block;
+}
+
+.nav-item {
+    opacity: 0; /* Hide text initially */
+    margin-left: 30px;
+    transition: opacity 0.5s ease;
+}
+
+nav:hover .nav-item {
+    opacity: 1; /* Reveal text when hovered */
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 90px; /* Sidebar collapsed width */
+    background: #DAD8D8;
+    height: 100%;
+    transition: width 0.2s linear;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Hide overflowing content */
+}
+
+nav:hover {
+    width: 280px; /* Sidebar expanded width */
+    transition: all 0.5s ease;
+}
+
+a {
+    position: relative;
+    color: black;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 30px;
+}
+
+.fas {
+    font-size: 24px;
+    text-align: center;
+    margin: 10px 0;
+    
+}
+
+a:hover {
+    background: white;
+    color: orangered;
+}
