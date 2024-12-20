@@ -45,36 +45,25 @@ body {
 
 /* Navigation Items */
 .nav-item {
-    opacity: 0; /* Hide text initially */
+    opacity: 1; /* Always visible */
     margin-left: 30px;
-    transition: opacity 0.5s ease;
-}
-
-nav:hover .nav-item {
-    opacity: 1; /* Reveal text when hovered */
 }
 
 /* Navigation Bar */
 nav {
-    position: absolute;
+    position: fixed; /* Fixed position */
     top: 0;
     left: 0;
-    width: 90px; /* Collapsed width */
-    height: 100%; /* Full height */
+    width: 290px; /* Adjusted width */
+    height: 100vh; 
     background: #DAD8D8;
-    transition: width 0.2s linear;
     box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
-    overflow: hidden; /* Hide overflowing content */
-    
-}
-
-nav:hover {
-    width: 250px; 
-    transition: all 0.5s ease;
+    overflow-y: auto; /* Allow scrolling for overflow */
 }
 
 nav a {
     text-decoration: none; 
+    white-space: nowrap; /* Prevent text wrapping */
 }
 
 /* Links and Icons */
@@ -98,5 +87,4 @@ a:hover {
     text-decoration: none;
     background: white;
     color: orangered;
-    
 }
