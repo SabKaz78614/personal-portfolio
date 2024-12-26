@@ -14,41 +14,179 @@ h1 {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-.about img {
-    width: 40%;
-    height: 800px;
-    float: right;
-    margin: 0px 30px 15px 20px;
-}
-
-.about-content {
+p{
+    line-height: 1.5;
+    padding: 10px; 
     text-align: justify;
     max-width: 40%;
     margin: 15px 16%;
-    color: black; 
-    
 }
 
-.about-content p, h2, h3{
-    line-height: 1.5;
-    padding: 10px;    
+img {
+    width: 40%;
+    height: 725px;
+    float: right;
+    margin: 0px 50px 15px 20px;
 }
 
-.about-content h2, h3{
-    color: orangered
+/*EDUCATION*/
+
+.grid {
+    display: grid;
+    gap: 24px;
 }
 
-.about-content h2{
-    font-size: 40px;
+.education-container {
+    row-gap: 50px;   
 }
 
-.about-content h3{
+.education-content {
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+}
+
+.education-year, .education-race {
+    font-size: 20px;
+    margin-bottom: 4px;
+}
+
+.education-university, .education-specialty {
+    display: block;
+    font-size: 16px;
+    text-align: left;
+}
+
+.education-year {
+    text-align: right;
+}
+
+.education-university {
+    display: block;
+    font-size: 16px;
+    text-align: right;
+}
+
+.education-time {
+    padding: 0 16px;
+    justify-self: center;
+}
+
+.section-subtitle, .section-title {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.section-subtitle {
+    color: orangered;
     font-size: 30px;
 }
 
-.education-content p{
-    font-size: 17px;
+.education-section {
+    margin-left: 80px; /* Adds spacing to prevent overlap with navbar */
 }
 
+/* round icon with line */
 
+.education-rounder {
+    position: relative;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-color: orangered;
+    border-radius: 50%;
+}
 
+.education-rounder::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    border: 1px solid orangered;
+    border-radius: 50%;
+}
+
+.education-line {
+    display: block;
+    height: 100%;
+    width: 2px;
+    background-color: orangered;
+    transform: translate(5px, -4px);
+}
+
+/* Work Section same as education */
+.grid {
+    display: grid;
+    gap: 24px;
+}
+
+.work-section {
+    margin: 50px 73px;
+}
+
+.work-container {
+    row-gap: 50px;   
+}
+
+.work-content {
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+}
+
+.work-year, .work-race {
+    font-size: 20px;
+    margin-bottom: 4px;
+}
+
+.work-specialty {
+    display: block;
+    font-size: 16px;
+    text-align: left;
+}
+
+.work-year {
+    text-align: right;
+}
+
+.work-time {
+    padding: 0 16px;
+    justify-self: center;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 25px;
+    color:black;
+}
+
+/* round icon with line */
+.work-rounder {
+    position: relative;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-color: orangered;
+    border-radius: 50%;
+}
+
+.work-rounder::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    border: 1px solid orangered;
+    border-radius: 50%;
+}
+
+.work-line {
+    display: block;
+    height: 100%;
+    width: 2px;
+    background-color: orangered;
+    transform: translate(5px, -4px);
+}
