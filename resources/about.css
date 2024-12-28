@@ -24,13 +24,12 @@ p{
 
 img {
     width: 40%;
-    height: 725px;
+    height: 800px;
     float: right;
     margin: 0px 50px 15px 20px;
 }
 
 /*EDUCATION*/
-
 .grid {
     display: grid;
     gap: 24px;
@@ -86,7 +85,6 @@ img {
 }
 
 /* round icon with line */
-
 .education-rounder {
     position: relative;
     display: inline-block;
@@ -189,4 +187,44 @@ img {
     width: 2px;
     background-color: orangered;
     transform: translate(5px, -4px);
+}
+
+/* SKILLS  */
+.skills h3{
+    color: orangered;
+    font-size: 30px;
+    text-align: center;
+    padding: 0px 40px;    
+}
+
+.skills-img {
+    width: 50px;
+    height:auto;
+    margin-bottom: 16px;
+    margin-left: 45px;
+}
+
+.skills-name {
+    font-size: 16px; 
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.skills-content {
+    justify-content: center;
+    align-items: flex-end;
+    margin-right: 36%;
+    display: inline-flex;
+    margin-left: 17%;
+}
+
+
+.skills-box {
+    display: inline-grid; 
+    align-items: center; 
+    transition: transform 0.4s;
+}
+
+.skills-box:hover {
+    transform: translateY(-4px); 
 }
