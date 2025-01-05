@@ -20,28 +20,26 @@ body {
 
 /* Logo Styling */
 .logo {
-    text-align: center;
+    text-align: center; 
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px 0;
-    gap: 5px;
-}
-
-.logo span {
-    font-weight: bold;
-    padding-right: 25px;
-    font-size: 20px;
-    text-transform: uppercase;
-    color: orangered;
+    flex-direction: column; 
+    align-items: center; 
+    margin: 20px auto; 
+    gap: 5px; 
 }
 
 .logo img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    margin-left: -10px; 
-    display: block;
+    width: 50px; 
+    height: 50px; 
+    border-radius: 50%; 
+    margin-bottom: 10px;
+}
+
+.name, .portfolio {
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: orangered; 
 }
 
 /* Navigation Items */
@@ -61,7 +59,9 @@ nav {
     box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
     z-index: 999;
     overflow-y: hidden; /* Prevent scrolling in navbar */
-   
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 /* Ensure nav items are stacked and not overflowing */
@@ -69,6 +69,7 @@ nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
+    width: 100%; /* Full width for navbar */
 }
 
 /* Links and Icons */
@@ -97,7 +98,27 @@ a:hover {
     color: orangered;
 }
 
-/* Make sure the body doesn't overflow horizontally */
+/* Prevent body overflow horizontally */
 body {
     overflow-x: hidden; /* Prevent horizontal scrollbar */
+}
+
+/* Make sure the navbar is always visible */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    height: 100vh;
+}
+
+/* Responsiveness to screen-size */
+@media only screen and (max-width: 1440px) {
+    nav {
+        width: 216px; /* Adjust navbar width on smaller screens */
+    }
+
+    .logo img {
+        margin-left: 40px; /* Adjust logo image margin */
+    }
 }

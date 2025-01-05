@@ -80,6 +80,18 @@ h3 {
     color: white;
 }
 
+.footer-details {
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+}
+
+.footer-details p {
+    margin: auto;
+    padding: 7px;
+    color: white;
+}
+
 .footer-content {
     flex: 1;
     min-width: 200px;
@@ -212,4 +224,55 @@ a {
     margin: 0;
     font-size: 16px;
     padding-left: 10%;
+}
+
+/* Responsivness to screen-size*/
+@media only screen and (max-width: 1440px) {
+    footer{
+        padding-top: 23px;
+        margin-top: 8.5%;
+    }
+    .footer-container {
+        width: 1000px;
+        margin-left: 23%;
+    }
+}
+
+@media only screen and (max-width: 1024px){
+    .contact-container {
+        margin-left: 27%;
+    }
+
+    footer{
+        margin-top: 11.6%;
+    }
+
+    .footer-container {
+        width: 810px;
+    }
+}
+
+@media only screen and (max-width: 786px){
+    .contact-container {
+        max-width: 525px;
+        margin-left: 30%;
+    }
+
+    .footer-content {
+        display: none;
+    }
+
+    .footer-container {
+        width: 600px;
+        margin-left: 28%;
+        height: 68px;
+    }
+
+    footer{
+        margin-top: 26.6%;
+    }
+
+    .bottom-bar p{
+        margin-left: 20%;
+    }
 }

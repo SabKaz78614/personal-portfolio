@@ -95,6 +95,7 @@ body {
     color: black;
     font-size: 15px;
     line-height: 1.5;
+    text-align: justify;
 }
 
 /* Projects cards hover aniimation */
@@ -159,3 +160,35 @@ body {
     z-index: 1; /* Ensure text is above the shine */
 }
 
+/* Responsivness to screen-size*/
+@media only screen and (max-width: 1440px) {
+    h1{
+        margin-left: 13%;
+    }
+
+    h2{
+        margin-left: 25%;
+    }
+}
+
+@media only screen and (max-width: 1024px){
+    h2 {
+        margin-left: 16%;
+        margin-right: 5%;
+    }
+
+    .card{
+        width: 600px;
+    }
+
+    .card img{
+        height: 450px;
+    }
+}
+
+@media only screen and (max-width: 786px){
+    h2 {
+        margin-left: 20%;
+        margin-right: 8%;
+    }
+}

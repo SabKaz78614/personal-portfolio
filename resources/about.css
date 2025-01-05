@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-h1 {
+.about h1 {
     text-align: center; 
     padding: 20px; 
     color: orangered; 
@@ -14,7 +14,7 @@ h1 {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-p{
+.about p{
     line-height: 1.5;
     padding: 10px; 
     text-align: justify;
@@ -22,7 +22,7 @@ p{
     margin: 15px 16%;
 }
 
-img {
+.about img {
     width: 40%;
     height: 800px;
     float: right;
@@ -227,4 +227,117 @@ img {
 
 .skills-box:hover {
     transform: translateY(-4px); 
+}
+
+/* Responsiveness for screen-size */
+@media only screen and (max-width: 1440px) {
+    .education-section, .work-section {
+        margin-left: 15%;
+    }
+
+    /* Skills section adjustments */
+    .skills h3{
+        margin-left: 10%;
+        padding-bottom: 15px;
+    }
+
+    .skills p{
+        margin-left: 20%;
+        padding-bottom: 20px;
+    }
+
+    .skills-content {
+        display: flex;
+        width: 16%;
+        margin-left: 48%;
+    }
+
+    .skills-box {
+        display: grid; 
+        align-items: center; 
+        justify-content: center; 
+        padding: 10px; 
+        text-align: center; /* Center the text under the image */
+    }
+
+    .skills-img {
+        width: 50px; 
+        height: 50px; 
+        object-fit: contain; 
+        margin-bottom: 10px; 
+    }
+
+    .skills-name {
+        font-size: 14px; /* Adjust font size */
+        margin-left: 45%;
+        line-height: 1;
+        padding: 10px 0;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .about img {
+        display: none; 
+    }
+
+    .about h1 {
+        margin-left: 10%;
+    }
+
+    .about p {
+        line-height: 1.5;
+        text-align: justify;
+        max-width: none; 
+        padding: 15px;
+        margin-left: 23%; 
+        margin-right: 3%; 
+    }
+
+    .work-section {
+        margin-left: 22%;
+    }
+
+    .skills h3{
+        margin-left: 15%;
+    }
+
+    .skills p{
+        margin-left: 40%;
+        padding: 15px 0;
+    }
+
+    .skills-content {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+    }    
+}
+
+@media only screen and (max-width: 786px){
+
+    .about h1 {
+        margin-left: 25%;
+    }
+
+    .about p {
+        margin-left: 30%;
+    }
+
+    .education-section {
+        margin-left: 30%;
+    }
+
+    .work-section {
+        margin-left: 39%;
+    }
+
+    .skills h3 {
+        margin-left: 29%;
+    }
+
+    .skills-content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-left: 52%;
+    }
+
 }

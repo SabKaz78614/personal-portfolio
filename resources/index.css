@@ -127,4 +127,10 @@ html, body {
     z-index: 1; /* Ensure text is above the shine */
 }
 
-
+/* Responsivness to screen-size*/
+@media only screen and (max-width: 786px){
+    .landing-page .content {
+        max-width: 400px;
+        margin: 20px 40%;
+    }
+}
