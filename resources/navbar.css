@@ -53,7 +53,7 @@ nav {
     position: fixed; /* Fixed position */
     top: 0;
     left: 0;
-    width: 290px; /* Adjusted width */
+    width: 220px; /* Adjusted width */
     height: 100vh; /* Full viewport height */
     background: #DAD8D8;
     box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
@@ -113,7 +113,7 @@ nav {
 }
 
 /* Responsiveness to screen-size */
-@media only screen and (max-width: 1440px) {
+@media (max-width: 1440px) {
     nav {
         width: 216px; /* Adjust navbar width on smaller screens */
     }
@@ -122,3 +122,21 @@ nav {
         margin-left: 40px; /* Adjust logo image margin */
     }
 }
+/* CHANGE NAVBAR TO ICONS SHOWING ONLY
+@media (max-width: 722px) {
+    nav {
+        width: 170px; 
+    }
+
+    .logo img {
+        margin-left: 0;
+    }
+
+    .name, .portfolio {
+        font-size: 18px; 
+    }
+
+    .nav-item {
+        font-size: 16px;
+    }
+} */
