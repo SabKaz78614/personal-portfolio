@@ -4,8 +4,17 @@
     box-sizing: border-box;
 }
 
-.about h1 {
+.about {
     text-align: center; 
+    margin: auto; 
+    padding: 20px;
+    max-width: 60%; 
+    box-sizing: border-box;
+}
+
+.about h1{
+    text-align: center; 
+    margin-left: 5%;
     padding: 20px; 
     color: orangered; 
     font-size: 36px; 
@@ -14,20 +23,14 @@
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-.about p{
+.about p {
     line-height: 1.5;
     padding: 10px; 
-    text-align: justify;
-    max-width: 40%;
-    margin: 15px 16%;
+    text-align: justify; 
+    max-width: 100%; 
+    margin-left: 5%; 
 }
 
-.about img {
-    width: 40%;
-    height: 800px;
-    float: right;
-    margin: 0px 50px 15px 20px;
-}
 
 /*EDUCATION*/
 .grid {
@@ -121,7 +124,8 @@
 }
 
 .work-section {
-    margin: 50px 73px;
+    margin-top: 50px;
+    margin-left: 4%;
 }
 
 .work-container {
@@ -190,18 +194,32 @@
 }
 
 /* SKILLS  */
+
+.skills {
+    text-align: center;
+    padding: 20px;
+    margin: auto;
+    max-width: 80%; 
+    box-sizing: border-box;
+}
+
 .skills h3{
     color: orangered;
     font-size: 30px;
     text-align: center;
-    padding: 0px 40px;    
+    padding: 10px 40px; 
+    margin-left: 5%;   
+}
+
+.skills p{
+    padding-bottom: 20px;
+    margin-left: 5%;
 }
 
 .skills-img {
     width: 50px;
     height:auto;
     margin-bottom: 16px;
-    margin-left: 45px;
 }
 
 .skills-name {
@@ -211,18 +229,21 @@
 }
 
 .skills-content {
-    justify-content: center;
-    align-items: flex-end;
-    margin-right: 36%;
-    display: inline-flex;
-    margin-left: 17%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); 
+    gap: 20px; 
+    justify-content: center; 
+    align-items: center; 
+    margin: auto; 
+    max-width: 80%; 
 }
-
 
 .skills-box {
     display: inline-grid; 
     align-items: center; 
+    justify-items: center; /* Center the content inside each box */
     transition: transform 0.4s;
+    text-align: center; /* Ensure text inside boxes is centered */
 }
 
 .skills-box:hover {
