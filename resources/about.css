@@ -347,6 +347,25 @@
     }
 }
 
+@media (max-width: 800px){
+    .about p {
+        margin-left: 12%;
+        width: 80%;
+    }
+
+    .education-section, .work-section{
+        margin-left: 31%;
+    }
+
+    .skills{
+        margin-left: 15%;
+    }
+
+    .skills-content {
+        margin-left: 50%;
+    }
+}
+
 @media (max-width: 788px){
 
     .about h1 {
@@ -384,16 +403,31 @@
         grid-template-columns: repeat(4, 1fr);
         margin-left: 52%;
     }
-
 }
 
-@media (max-width: 722px){
-    .about p {
-        margin-left: 8%;
+@media (max-width: 768px){
+    .about h1 {
+        margin-left: -10%;
+    }
+
+    .about p{
+        width: 100%;
+        margin-left: -6%;
     }
 
     .education-section, .work-section{
-        margin-left: 27%;
+        margin-left: 13%;
+    }
+
+    .skills{
+        margin-left: 0;
+    }
+}
+
+
+@media (max-width: 722px){
+    .about h1 {
+        margin-left: 0;
     }
 
     .section-subtitle, .section-title{
@@ -418,15 +452,48 @@
         font-size: 14px;
     }
 
-    .skills h3{
-        font-size: 23px;
-    }
-
-    .skills p{
-        font-size: 14px;
+    .skills-content {
+        grid-template-columns: repeat(5, 1fr);
+        margin-left: 58%;
     }
 
     .skills-name {
         font-size: 14px;
     }    
 }
+
+@media (max-width: 590px){
+    .education-section, .work-section{
+        margin-left: 17%;
+    }
+
+    .skills{
+        margin-left: 3%;
+    }
+
+    .skills-content {
+        grid-template-columns: repeat(4, 1fr);
+        margin-left: 55%;
+    }
+}
+
+/* @610PX hamburger Menu */
+
+/* @media (max-width: 475px){
+    .education-year, .education-race{
+        font-size: 14px;
+    }
+
+    .education-specialty, .education-university{
+        font-size: 12px;
+    }
+
+    .work-year, .work-race{
+        font-size: 14px;
+    }
+
+    .work-specialty{
+        font-size: 12px;
+    }
+} */
+

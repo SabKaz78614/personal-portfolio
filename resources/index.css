@@ -128,9 +128,54 @@ html, body {
 }
 
 /* Responsivness to screen-size*/
-@media only screen and (max-width: 786px){
+@media (max-width: 1024px){
     .landing-page .content {
-        max-width: 400px;
-        margin: 20px 40%;
+        margin: 0 35%;
     }
 }
+
+@media (max-width: 852px){
+    .landing-page .content {
+        margin: 0 32%;
+    }
+}
+
+@media (max-width: 768px){
+    .landing-page .content {
+        margin: 0 22%;
+    }
+}
+
+@media (max-width: 690px){
+    .landing-page .content {
+        margin: 0 16%;
+    }
+
+    .landing-page .content h1 {
+        font-size: 35px;
+    }
+
+    .landing-page .content h2 {
+        font-size: 25px;
+    }
+
+    .landing-page .content p {
+        font-size: 16px;
+    }
+
+    .btn {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 590px){
+    .landing-page .content p{
+        width: 70%;
+    }
+
+    .landing-page .content {
+        margin: 0 13%;
+    }
+}
+
+/* @610PX hamburger Menu */

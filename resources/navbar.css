@@ -123,14 +123,13 @@ nav {
     }
 }
 
-@media (max-width: 722px) {
+@media (max-width: 768px) {
     nav {
         width: 82px 
     }
 
     nav .fas {
         display: inline-block; 
-        font-size: 24px;
         margin-right: 10px;
     }
 
@@ -139,14 +138,13 @@ nav {
     }
 
     .logo img {
-        display: none;
+        margin-left: 0;
     }
 
     .name, .portfolio {
-        display: none;
+        font-size: 11px;
     }
 
-    .nav-item {
-        font-size: 16px;
-    }
 }
+
+/* @610PX make hamburger Menu */
