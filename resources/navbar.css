@@ -132,10 +132,6 @@ body {
     nav {
         width: 216px; /* Adjust navbar width on smaller screens */
     }
-
-    .logo img {
-        margin-left: 40px; /* Adjust logo image margin */
-    }
 }
 
 @media (max-width: 768px) {
@@ -180,5 +176,14 @@ body {
     nav{
         transform: translateX(-100%); /* Move sidebar out of view */
         transition: transform 0.3s ease-in-out;
+        width: 100%;
+    }
+
+    .fas{
+        display: none;
+    }
+
+    .nav-item{
+        opacity: 990;
     }
 }
