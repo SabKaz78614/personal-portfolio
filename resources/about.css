@@ -462,13 +462,17 @@
     }    
 }
 
-@media (max-width: 590px){
+@media (max-width: 610px){
+    .about {
+        margin-left: 16%;
+    }
+
     .education-section, .work-section{
-        margin-left: 17%;
+        margin-left: 0%;
     }
 
     .skills{
-        margin-left: 3%;
+        margin-left:-5%;
     }
 
     .skills-content {
@@ -477,9 +481,19 @@
     }
 }
 
-/* @610PX hamburger Menu */
+@media (max-width: 540px){
+    .education-section, .work-section{
+        margin-left: 5%;
+    }
 
-/* @media (max-width: 475px){
+    .skills p {
+        margin-left: 22%;
+        width: 100%;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 475px){
     .education-year, .education-race{
         font-size: 14px;
     }
@@ -495,5 +509,69 @@
     .work-specialty{
         font-size: 12px;
     }
-} */
 
+    .skills h3 {
+        font-size: 23px;
+        margin-left: 46%;
+    }
+
+    .skills p {
+        font-size: 12px;
+        margin-left: 22%;
+        width: 100%;
+    }
+
+    .skills-name {
+        font-size: 12px;
+    }
+
+    .skills-content {
+        margin-left: 60%;
+    }
+
+    .skills-img {
+        height: 45px;
+    }
+}
+
+@media (max-width: 425px){
+    .about p {
+        font-size: 12px;
+    }
+    
+    .skills-content {
+        margin-left: 60%;
+    }
+
+    .skills-img {
+        height: 40px;
+    }
+}
+
+@media (max-width: 375px){
+    .about h1 {
+        font-size: 28px;
+    }
+
+    .section-subtitle, .section-title {
+        font-size: 20px;
+    }
+
+    .skills h3 {
+        font-size: 21px;
+    }
+
+    .skills-content {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 320px){
+    .education-section, .work-section {
+        margin-left: 3%;
+    }
+
+    .skills p {
+        margin-left: 25%;
+    }
+}

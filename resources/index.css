@@ -168,14 +168,18 @@ html, body {
     }
 }
 
-@media (max-width: 590px){
+@media (max-width: 610px){
+    .landing-page .content {
+        margin: 0 9%;
+    }
+
     .landing-page .content p{
         width: 70%;
     }
-
-    .landing-page .content {
-        margin: 0 13%;
-    }
 }
 
-/* @610PX hamburger Menu */
+@media (max-width: 425px){
+    .landing-page .content {
+        margin: 0 6%;
+    }
+}
