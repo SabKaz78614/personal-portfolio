@@ -1,5 +1,3 @@
-/* ========== GLOBAL STYLES ========== */
-
 /* Ensure the body and html take the full height of the screen */
 html, body {
     margin: 0;
@@ -7,8 +5,6 @@ html, body {
     height: 100%;
     width: 100%;
 }
-
-/* ========== LANDING PAGE STYLES ========== */
 
 /* Make the landing-page div take up the full height and width */
 .landing-page {
@@ -40,8 +36,6 @@ html, body {
     background-color: rgba(0, 0, 0, 0.5);  /* Darken with a semi-transparent black overlay */
     z-index: 1; /* Ensure overlay is above the image */
 }
-
-/* ========== CONTENT STYLES ========== */
 
 /* Content Styling - Ensure text appears above the image and overlay */
 .landing-page .content {
@@ -83,8 +77,6 @@ html, body {
 .landing-page .content strong {
     color: #f39c12; /* Highlight 'Front-End Developer' with a goldish color */
 }
-
-/* ========== BUTTON STYLES ========== */
 
 /* Button Setup */
 .btn {
@@ -135,33 +127,30 @@ html, body {
     z-index: 1; /* Ensure text is above the shine */
 }
 
-/* ========== RESPONSIVENESS ========== */
-
-/* Responsiveness for different screen sizes */
-@media (max-width: 1024px) {
+/* Responsivness to screen-size*/
+@media (max-width: 1024px){
     .landing-page .content {
         margin: 0 35%;
     }
 }
 
-@media (max-width: 852px) {
+@media (max-width: 852px){
     .landing-page .content {
         margin: 0 32%;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px){
     .landing-page .content {
         margin: 0 22%;
     }
 }
 
-@media (max-width: 690px) {
+@media (max-width: 690px){
     .landing-page .content {
         margin: 0 16%;
     }
 
-    /* Adjusting font sizes for smaller screens */
     .landing-page .content h1 {
         font-size: 35px;
     }
@@ -179,19 +168,50 @@ html, body {
     }
 }
 
-@media (max-width: 610px) {
+@media (max-width: 610px){
     .landing-page .content {
         margin: 0 9%;
     }
 
-    /* Adjusting paragraph width for smaller screens */
-    .landing-page .content p {
+    .landing-page .content p{
         width: 70%;
     }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 425px){
     .landing-page .content {
         margin: 0 6%;
+    }
+}
+
+
+@media (max-width: 375px) {
+    .contact-container {
+        margin-left: 10%;
+    }
+
+    .btn {
+        overflow: visible;
+    }
+}
+
+@media (max-width: 360px) {
+    .contact-container {
+        margin-left: 7%;
+    }
+}
+
+@media (max-width: 340px) {
+    .contact-container {
+        margin-left: 7%;
+    }
+    .footer-container {
+        margin-left: -3%;
+    }
+}
+
+@media (max-width: 320px) {
+    .contact-container {
+        margin-left: 3%;
     }
 }

@@ -1,4 +1,5 @@
 /* Global reset */
+
 * {
     margin: 0px;
     padding: 0px;
@@ -9,36 +10,38 @@
 .about {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centering the content horizontally */
+    align-items: center; 
     margin: 0 15% 0 19%; /* Adjust as necessary for different breakpoints */
 }
 
-.about h1 {
-    text-align: center;
+.about h1{
+    text-align: center; 
     margin-left: 5%;
-    padding: 20px;
-    color: orangered;
-    font-size: 36px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
+    padding: 20px; 
+    color: orangered; 
+    font-size: 36px; 
+    letter-spacing: 1px; 
+    text-transform: uppercase; 
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .about p {
-    margin: 0;
+    margin: 0; /* Remove left margin */
     width: 100%; /* Let the parent control the width */
     text-align: justify;
     padding-bottom: 30px;
 }
 
+
 /* Education Section */
+
 .grid {
     display: grid;
     gap: 24px;
 }
 
 .education-container {
-    row-gap: 50px;
+    row-gap: 50px;   
 }
 
 .education-content {
@@ -58,6 +61,12 @@
 }
 
 .education-year {
+    text-align: right;
+}
+
+.education-university {
+    display: block;
+    font-size: 16px;
     text-align: right;
 }
 
@@ -81,6 +90,7 @@
 }
 
 /* Education Round Icon with Line */
+
 .education-rounder {
     position: relative;
     display: inline-block;
@@ -110,14 +120,19 @@
     transform: translate(5px, -4px);
 }
 
-/* Work Section (same as education) */
+/* Work Section same as education */
+.grid {
+    display: grid;
+    gap: 24px;
+}
+
 .work-section {
     margin-top: 50px;
     margin-left: 4%;
 }
 
 .work-container {
-    row-gap: 50px;
+    row-gap: 50px;   
 }
 
 .work-content {
@@ -148,10 +163,11 @@
 .section-title {
     text-align: center;
     margin-bottom: 25px;
-    color: black;
+    color:black;
 }
 
 /* Work Round Icon with Line */
+
 .work-rounder {
     position: relative;
     display: inline-block;
@@ -182,67 +198,70 @@
 }
 
 /* Skills Section */
+
 .skills {
     text-align: center;
     padding: 20px;
     margin: auto;
-    max-width: 80%;
+    max-width: 80%; 
     box-sizing: border-box;
 }
 
-.skills h3 {
+.skills h3{
     color: orangered;
     font-size: 30px;
     text-align: center;
-    padding: 10px 40px;
-    margin-left: 5%;
+    padding: 10px 40px; 
+    margin-left: 5%;   
 }
 
-.skills p {
+.skills p{
     padding-bottom: 20px;
     margin-left: 5%;
 }
 
 .skills-img {
     width: 50px;
-    height: auto;
+    height:auto;
     margin-bottom: 16px;
 }
 
 .skills-name {
-    font-size: 16px;
+    font-size: 16px; 
     text-align: center;
     margin-bottom: 30px;
 }
 
 .skills-content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    max-width: 80%;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); 
+    gap: 20px; 
+    justify-content: center; 
+    align-items: center; 
+    margin: auto; 
+    max-width: 80%; 
 }
 
 .skills-box {
-    display: inline-grid;
-    align-items: center;
+    display: inline-grid; 
+    align-items: center; 
     justify-items: center; /* Center the content inside each box */
     transition: transform 0.4s;
     text-align: center; /* Ensure text inside boxes is centered */
 }
 
 .skills-box:hover {
-    transform: translateY(-4px);
+    transform: translateY(-4px); 
 }
 
 /* Media Queries for Responsiveness */
 
-/* Medium devices */
+/* Large devices */
+
 @media (max-width: 1440px) {
+
     .about {
-        margin: 0 20%;
+        margin: 0 20%; /* Adjust the overall margin to prevent overlap */
         width: 75%;
     }
     
@@ -250,12 +269,13 @@
         margin-left: 15%;
     }
 
-    .skills h3 {
+    
+    .skills h3{
         margin-left: 18%;
         padding-bottom: 15px;
     }
 
-    .skills p {
+    .skills p{
         margin-left: 20%;
     }
 
@@ -266,35 +286,45 @@
     }
 
     .skills-box {
-        display: grid;
-        padding: 10px;
-        text-align: center;
+        display: grid; 
+        padding: 10px; 
+        text-align: center; 
     }
 
     .skills-img {
-        height: 50px;
-        object-fit: contain;
-        margin-bottom: 10px;
+        height: 50px; 
+        object-fit: contain; 
+        margin-bottom: 10px; 
     }
 
     .skills-name {
-        font-size: 16px;
+        font-size: 16px; 
         line-height: 1;
         padding: 10px 0;
     }
 }
 
-/* Small devices */
-@media (max-width: 1062px) {
+@media (max-width: 1176px) {
+    
+    .about {
+        margin: 0 22%; 
+        width: 75%;
+    }
+    
+    .skills-content {
+        margin-left: 52%;
+    }    
+}
+
+@media (max-width: 1062px){
     .skills-content {
         display: grid;
         grid-template-columns: repeat(5, 2fr);
-    }
+    }    
 }
 
-/* Large devices */
-@media (max-width: 1024px) {
-    .about h1 {
+@media (max-width: 1024px){
+    .about h1{
         margin-left: 0;
     }
     
@@ -303,9 +333,10 @@
     }
 }
 
-/* Further small devices adjustments */
-@media (max-width: 969px) {
-    .about h1 {
+/* Further smaller devices adjustments */
+
+@media (max-width: 969px){
+    .about h1{
         margin-left: 5%;
     }
     
@@ -318,7 +349,7 @@
         margin-left: 20%;
     }
 
-    .skills h3 {
+    .skills h3{
         margin-left: 25%;
     }
 
@@ -327,18 +358,17 @@
     }
 }
 
-/* Very small devices */
-@media (max-width: 800px) {
+@media (max-width: 800px){
     .about p {
         margin-left: 12%;
         width: 80%;
     }
 
-    .education-section, .work-section {
+    .education-section, .work-section{
         margin-left: 31%;
     }
 
-    .skills {
+    .skills{
         margin-left: 15%;
     }
 
@@ -347,7 +377,8 @@
     }
 }
 
-@media (max-width: 788px) {
+@media (max-width: 788px){
+
     .about h1 {
         margin-left: 10%;
         font-size: 30px;
@@ -359,8 +390,14 @@
         line-height: 1.5;
     }
 
-    .education-section, .work-section {
+    .education-section, .work-section{
         margin-left: 30%;
+    }
+
+
+    .education-year, .education-race {
+        font-family: 20px;
+
     }
 
     .skills h3 {
@@ -369,6 +406,7 @@
 
     .skills p {
         margin-left: 39%;
+        
     }
 
     .skills-content {
@@ -378,50 +416,50 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px){
     .about h1 {
         margin-left: -10%;
     }
 
-    .about p {
+    .about p{
         width: 100%;
         margin-left: -6%;
     }
 
-    .education-section, .work-section {
+    .education-section, .work-section{
         margin-left: 13%;
     }
 
-    .skills {
+    .skills{
         margin-left: 0;
     }
 }
 
-/* Small devices */
-@media (max-width: 722px) {
+
+@media (max-width: 722px){
     .about h1 {
         margin-left: 0;
     }
 
-    .section-subtitle, .section-title {
+    .section-subtitle, .section-title{
         font-size: 23px;
     }
 
-    .education-year, .education-race {
+    .education-year, .education-race{
         font-size: 16px;
         font-weight: 900;
     }
 
-    .education-specialty, .education-university {
+    .education-specialty, .education-university{
         font-size: 14px;
     }
 
-    .work-year, .work-race {
+    .work-year, .work-race{
         font-size: 16px;
         font-weight: 900;
     }
 
-    .work-specialty {
+    .work-specialty{
         font-size: 14px;
     }
 
@@ -432,20 +470,23 @@
 
     .skills-name {
         font-size: 14px;
-    }
+    }    
 }
 
-@media (max-width: 610px) {
+/* Smaller devices */
+
+
+@media (max-width: 610px){
     .about {
         margin-left: 16%;
     }
 
-    .education-section, .work-section {
+    .education-section, .work-section{
         margin-left: 0%;
     }
 
-    .skills {
-        margin-left: -5%;
+    .skills{
+        margin-left:-5%;
     }
 
     .skills-content {
@@ -454,8 +495,8 @@
     }
 }
 
-@media (max-width: 540px) {
-    .education-section, .work-section {
+@media (max-width: 540px){
+    .education-section, .work-section{
         margin-left: 5%;
     }
 
@@ -466,21 +507,20 @@
     }
 }
 
-/* Very small devices */
-@media (max-width: 475px) {
-    .education-year, .education-race {
+@media (max-width: 475px){
+    .education-year, .education-race{
         font-size: 14px;
     }
 
-    .education-specialty, .education-university {
+    .education-specialty, .education-university{
         font-size: 12px;
     }
 
-    .work-year, .work-race {
+    .work-year, .work-race{
         font-size: 14px;
     }
 
-    .work-specialty {
+    .work-specialty{
         font-size: 12px;
     }
 
@@ -508,12 +548,11 @@
     }
 }
 
-/* Smallest devices */
-@media (max-width: 425px) {
+@media (max-width: 425px){
     .about p {
         font-size: 12px;
     }
-
+    
     .skills-content {
         margin-left: 60%;
     }
@@ -523,7 +562,7 @@
     }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 375px){
     .about h1 {
         font-size: 28px;
     }
@@ -541,7 +580,7 @@
     }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 320px){
     .education-section, .work-section {
         margin-left: 3%;
     }

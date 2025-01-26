@@ -1,26 +1,23 @@
-/* ========== CONTACT SECTION ========== */
+/* Conatacts section */
 
-/* Contact container styling */
-.contact-container {
+.contact-container{
     width: 100%;
     max-width: 700px;
     margin: 50px auto;
     padding: 20px;
     background-color: #fff;
     border-radius: 10px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 10px rgba(0,0,0,0,2);
     margin-left: 37%;
 }
 
-/* Contact form header */
-.contact-container h1 {
+.contact-container h1{
     text-align: center;
     margin-bottom: 20px;
     color: orangered;
 }
 
-/* Form input and textarea styling */
-form input, form textarea {
+form input, form textarea{
     display: block;
     width: 100%;
     margin-bottom: 10px;
@@ -28,23 +25,20 @@ form input, form textarea {
     border: none;
     border-radius: 5px;
     background-color: #f7f7f7;
-    color: #333;
+    color:#333
 }
 
-/* Textarea specific styling */
-form textarea {
+form textarea{
     height: 150px;
     margin-bottom: 20px;
 }
 
-/* Focus state for form inputs and textareas */
-form input:focus, form textarea:focus {
+form input:focus, form textarea:focus{
     outline: none;
     box-shadow: 0 0 5px orangered;
 }
 
-/* Submit button styling */
-form button {
+form button{
     display: block;
     width: 100%;
     padding: 10px;
@@ -56,14 +50,12 @@ form button {
     transition: 0.3s ease;
 }
 
-/* Submit button hover effect */
-form button:hover {
+form button:hover{
     background-color: #555;
 }
 
-/* ========== FOOTER SECTION ========== */
+/* Footer Section */
 
-/* General footer styling */
 footer {
     background: #343434;
     padding-top: 50px;
@@ -71,7 +63,6 @@ footer {
     margin-top: 9.5%;
 }
 
-/* Footer container styling */
 .footer-container {
     width: 1140px;
     height: 150px;
@@ -82,7 +73,6 @@ footer {
     gap: 20px;
 }
 
-/* Footer section title styling */
 h3 {
     font-size: 28px;
     margin-bottom: 15px;
@@ -90,29 +80,46 @@ h3 {
     color: white;
 }
 
-/* Footer content section styling */
-.footer-details, .footer-content, .socials {
+.footer-details {
     flex: 1;
     min-width: 200px;
     text-align: center;
 }
 
-/* Footer section text styling */
-.footer-details p, .footer-content p {
+.footer-details p {
     margin: auto;
     padding: 7px;
     color: white;
 }
 
-/* Unordered list styling for footer links */
-.footer-content ul, .list {
+.footer-content {
+    flex: 1;
+    min-width: 200px;
     text-align: center;
-    padding: 0;
-    margin: 0;
-    list-style: none;
 }
 
-/* Footer list items styling */
+.footer-content p {
+    margin: auto;
+    padding: 7px;
+    color: white;
+}
+
+.footer-content ul {
+    text-align: center;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
 .list li {
     width: auto;
     text-align: center;
@@ -122,7 +129,6 @@ h3 {
     overflow: hidden;
 }
 
-/* Hover effect for footer list items */
 .list li::before {
     content: "";
     position: absolute;
@@ -140,7 +146,12 @@ h3 {
     background: orangered;
 }
 
-/* Social icons container */
+.socials {
+    text-align: center;
+    flex: 1;
+    min-width: 200px;
+}
+
 .socials ul {
     list-style: none;
     padding: 0;
@@ -149,15 +160,15 @@ h3 {
     gap: 10px;
 }
 
-/* Styling for each social icon */
 .socials li {
     display: inline-block;
+    text-align: center;
     position: relative;
     padding: 5px;
     overflow: hidden;
 }
 
-/* Hover underline effect on social icons */
+/* Underline animation on hover */
 .socials li::after {
     content: "";
     position: absolute;
@@ -174,33 +185,33 @@ h3 {
     width: 100%;
 }
 
-/* Social icon styling */
+/* Ensure no background on hover */
 .socials i {
-    color: white;
+    color: white; /* Default icon color */
     font-size: 25px;
-    background: none !important;
-    padding: 0 !important;
-    transition: none;
+    background: none !important; /* Remove background */
+    padding: 0 !important; /* Ensure no padding */
+    transition: none; /* No transition on color */
 }
 
-/* Prevent color change on social icon hover */
+/* No color change on hover */
 .socials li:hover i {
-    color: inherit !important;
+    color: inherit !important; /* Keep original color */
 }
 
-/* Prevent background and color changes on <a> tags inside social icons */
+/* Remove any hover background on the <a> tag */
 .socials li a {
     text-decoration: none;
-    color: inherit !important;
-    background: none !important;
+    color: inherit !important; /* Keep color inherited from parent */
+    background: none !important; /* Remove background */
 }
 
+/* Prevent color or background change on <a> hover */
 .socials li a:hover {
-    color: inherit !important;
-    background: none !important;
+    color: inherit !important; /* Keep the same color */
+    background: none !important; /* Prevent background change */
 }
 
-/* Bottom bar styling */
 .bottom-bar {
     background: orangered;
     text-align: center;
@@ -208,7 +219,6 @@ h3 {
     margin-top: 50px;
 }
 
-/* Bottom bar text styling */
 .bottom-bar p {
     color: black;
     margin: 0;
@@ -216,15 +226,12 @@ h3 {
     padding-left: 10%;
 }
 
-/* ========== RESPONSIVE DESIGN ========== */
-
-/* Responsive breakpoints */
+/* Responsivness to screen-size*/
 @media (max-width: 1440px) {
-    footer {
+    footer{
         padding-top: 23px;
         margin-top: 8.5%;
     }
-
     .footer-container {
         width: 1000px;
         margin-left: 23%;
@@ -233,11 +240,12 @@ h3 {
 }
 
 @media (max-width: 1250px) {
+
     .contact-container {
         margin-left: 30%;
     }
 
-    footer {
+    footer{
         margin-top: 9.5%;
     }
 
@@ -254,13 +262,12 @@ h3 {
     }
 }
 
-/* Further responsive styling for smaller screens */
-@media (max-width: 1130px) {
-    footer {
+@media (max-width: 1130px){
+    footer{
         margin-top: 10.5%;
     }
 
-    .footer-content, .socials {
+    .footer-content, .socials{
         margin-left: -30%;
     }
 
@@ -268,18 +275,19 @@ h3 {
         margin-left: 16%;
     }
 
-    .bottom-bar p {
+    .bottom-bar p{
         margin-left: 12%;
     }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1024px){
+
     .contact-container {
         max-width: 600px;
         margin-left: 31%;
     }
 
-    footer {
+    footer{
         margin-top: 11.6%;
     }
 
@@ -289,8 +297,9 @@ h3 {
     }
 }
 
-@media (max-width: 950px) {
-    footer {
+@media (max-width: 950px){
+
+    footer{
         margin-top: 12.5%;
     }
 
@@ -300,7 +309,7 @@ h3 {
     }
 }
 
-@media (max-width: 880px) {
+@media (max-width: 880px){
     .contact-container {
         margin-left: 30%;
     }
@@ -310,7 +319,7 @@ h3 {
     }
 }
 
-@media (max-width: 840px) {
+@media (max-width: 840px){
     .contact-container {
         max-width: 500px;
         margin-left: 32%;
@@ -326,20 +335,20 @@ h3 {
         height: 68px;
     }
 
-    .socials {
+    .socials{
         margin-left: -15%;
     }
 
-    footer {
+    footer{
         margin-top: 26.6%;
     }
 
-    .bottom-bar p {
+    .bottom-bar p{
         margin-left: 20%;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px){
     .contact-container {
         margin-left: 23%;
     }
@@ -353,8 +362,8 @@ h3 {
     }
 }
 
-@media (max-width: 720px) {
-    footer {
+@media (max-width: 720px){
+    footer{
         margin-top: 28%;
     }
 
@@ -363,8 +372,8 @@ h3 {
     }
 }
 
-@media (max-width: 690px) {
-    footer {
+@media (max-width: 690px){
+    footer{
         margin-top: 29%;
     }
 
@@ -378,7 +387,7 @@ h3 {
     }
 }
 
-@media (max-width: 620px) {
+@media (max-width: 620px){
     .contact-container {
         margin-left: 25%;
         max-width: 400px;
@@ -388,12 +397,12 @@ h3 {
         margin-left: 12%;
     }
 
-    footer {
+    footer{
         margin-top: 33%;
     }
 }
 
-@media (max-width: 610px) {
+@media (max-width: 610px){
     h3 {
         font-size: 20px;
     }
@@ -415,12 +424,12 @@ h3 {
         margin-left: 0%;
     }
 
-    .socials i {
+    .socials i{
         font-size: 20px;
     }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 550px){
     .contact-container {
         margin-left: 14%;
     }
@@ -430,7 +439,7 @@ h3 {
     }
 }
 
-@media (max-width: 520px) {
+@media (max-width: 520px){
     .contact-container {
         margin-left: 12%;
     }
@@ -445,7 +454,7 @@ h3 {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 480px){
     .contact-container {
         margin-left: 9%;
         max-width: 350px;
@@ -457,13 +466,13 @@ h3 {
     }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 425px){
     .contact-container {
         margin-left: 15%;
         max-width: 300px;
     }
 
-    .contact-container h1 {
+    .contact-container h1{
         font-size: 25px;
     }
 
@@ -472,7 +481,7 @@ h3 {
         margin-left: 5%;
     }
 
-    .footer-details, .socials {
+    .footer-details, .socials{
         margin-left: 0%;
     }
 }
