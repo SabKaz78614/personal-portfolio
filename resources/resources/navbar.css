@@ -1,0 +1,229 @@
+/* ========== UNIVERSAL RESET ========== */
+
+/* Reset margin, padding, and box-sizing for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ========== GLOBAL STYLES ========== */
+
+/* Ensure html and body take full height */
+html, body {
+    height: 100%; /* Full height for content */
+    margin: 0;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+    overflow-y: auto;  /* Allow vertical scroll if needed */
+}
+
+/* Body Background */
+body {
+    background: whitesmoke;
+}
+
+/* ========== LOGO STYLES ========== */
+
+/* Logo container styling */
+.logo {
+    text-align: center; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    margin: 20px auto; 
+    gap: 5px; 
+}
+
+/* Logo image styling */
+.logo img {
+    width: 50px; 
+    height: 50px; 
+    border-radius: 50%; /* Make the logo circular */
+    margin-bottom: 10px;
+}
+
+/* Name and portfolio text styling */
+.name, .portfolio {
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: orangered; 
+}
+
+/* ========== NAVIGATION BAR STYLES ========== */
+
+/* Navigation item styling */
+.nav-item {
+    opacity: 1; /* Always visible */
+    margin-left: 30px;
+}
+
+/* Navigation Bar Styling */
+nav {
+    position: fixed; /* Fixed position */
+    top: 0;
+    left: 0;
+    width: 220px; /* Adjusted width */
+    height: 100vh; /* Full viewport height */
+    background: #DAD8D8;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+    overflow-y: hidden; /* Prevent scrolling in navbar */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Navigation list styling */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%; /* Full width for navbar */
+}
+
+/* Links and icons inside navbar */
+nav a {
+    text-decoration: none; 
+    white-space: nowrap; /* Prevent text wrapping */
+    color: black;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 30px;
+}
+
+/* Icons styling */
+.fas {
+    font-size: 24px;
+    text-align: center;
+    margin: 10px 0;
+}
+
+/* Hover effect for nav links */
+a:hover {
+    text-decoration: none;
+    background: white;
+    color: orangered;
+}
+
+/* Prevent body overflow horizontally */
+body {
+    overflow-x: hidden; /* Prevent horizontal scrollbar */
+}
+
+/* ========== HAMBURGER MENU STYLES ========== */
+
+/* Hamburger menu button */
+.hamburger-menu {
+    display: none; 
+    position: fixed;
+    top: 20px;
+    left: 28px;
+    font-size: 28px;
+    cursor: pointer;
+    z-index: 1000; 
+    color: orangered;
+}
+
+/* Hamburger menu icon styling */
+.hamburger-menu i {
+    display: inline; 
+}
+
+/* Navigation links when in a hamburger menu */
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+}
+
+/* ========== RESPONSIVENESS TO SCREEN-SIZE ========== */
+
+/* Adjustments for screens smaller than 1440px */
+@media (max-width: 1440px) {
+    nav {
+        width: 216px; /* Adjust navbar width on smaller screens */
+    }
+}
+
+/* Adjustments for screens smaller than 768px */
+@media (max-width: 768px) {
+    nav {
+        width: 82px; /* Narrow navbar on smaller screens */
+    }
+
+    nav .fas {
+        display: inline-block; /* Show icons inline */
+        margin-right: 10px;
+    }
+
+    .nav-links i {
+        display: none; /* Hide icons on small screens */
+    }
+
+    /* Adjust logo image and text */
+    .logo img {
+        margin-left: 0;
+    }
+
+    .name, .portfolio {
+        font-size: 12px;
+    }
+
+    .nav-item {
+        margin-left: -15px;
+        font-size: 15px;
+    }
+}
+
+/* Adjustments for screens smaller than 610px */
+@media (max-width: 610px) {
+    /* Show hamburger menu on small screens */
+    .hamburger-menu {
+        display: block; 
+    }
+
+    /* When checkbox is checked, show the navigation */
+    #menu-toggle:checked ~ nav {
+        transform: translateX(0); /* Slide the sidebar into view */
+    }
+
+    /* Styling nav items in mobile view */
+    .nav-links li {
+        margin: 10px 0; 
+        width: 100%;
+    }
+
+    nav a {
+        display: block; 
+        width: 100%;    
+        text-align: center; 
+    }
+
+    /* Sidebar movement and transition on mobile */
+    nav {
+        transform: translateX(-100%); /* Move sidebar out of view */
+        transition: transform 0.3s ease-in-out;
+        width: 100%;
+    }
+
+    /* Increase font size for nav items */
+    .nav-item {
+        font-size: 20px;
+    }
+
+    /* Adjust logo text size */
+    .name, .portfolio {
+        font-size: 25px;
+    }
+
+    /* Styling for the nav container when in mobile view */
+    .nav-links {
+        display: flex;           
+        flex-direction: column;  
+        align-items: center;     
+        height: 100vh;     
+    }
+}

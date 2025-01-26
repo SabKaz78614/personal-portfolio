@@ -1,0 +1,401 @@
+/* ========== UNIVERSAL RESET ========== */
+
+/* Reset margin, padding, and box-sizing for all elements */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* ========== HEADINGS STYLES ========== */
+
+/* Main heading style (h1) */
+h1 {
+    text-align: center; 
+    padding: 20px; 
+    color: orangered; 
+    font-size: 36px; 
+    letter-spacing: 1px; 
+    text-transform: uppercase; 
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Secondary heading style (h2) */
+h2 {
+    font-size: 20px; 
+    font-weight: 400; 
+    color: black;
+    line-height: 1.6; 
+    text-align: justify; 
+    margin: 20px auto; 
+    max-width: 800px; /* Constrain text width */
+}
+
+/* ========== BODY STYLES ========== */
+
+/* Body padding for content alignment */
+body {
+    padding-left: 120px; /* Matches the width of the navbar */
+}
+
+/* ========== CARD CONTAINER STYLES ========== */
+
+/* Card container that holds all cards */
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 11px;
+    margin-left: 130px;
+}
+
+/* Card styles */
+.card {
+    width: 450px;
+    height: fit-content;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Card image styling */
+.card img {
+    width: 100%;
+    height: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    border-radius: 10px; 
+}
+
+/* Zoom-out effect on hover */
+.card img:hover {
+    transform: scale(0.95); 
+    box-shadow: 0 0 25px 10px rgba(255, 180, 50, 0.5); /* Warm orange-gold glow */
+    animation: pulseGlow 1s infinite;
+}
+
+/* Keyframes for the glowing pulse effect */
+@keyframes pulseGlow {
+    0% {
+        box-shadow: 0 0 15px 5px rgba(255, 180, 50, 0.5); /* Subtle orange-gold glow */
+    }
+    50% {
+        box-shadow: 0 0 30px 10px rgba(255, 180, 50, 0.6); /* Brighter orange-gold glow */
+    }
+    100% {
+        box-shadow: 0 0 15px 5px rgba(255, 180, 50, 0.5); /* Return to soft orange-gold glow */
+    }
+}
+
+/* Card content styling */
+.card-content {
+    padding: 16px;
+}
+
+.card-content h3 {
+    font-size: 28px;
+    margin-bottom: 8px;
+    text-align: center;
+    color: orangered;
+}
+
+.card-content p {
+    color: black;
+    font-size: 15px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+/* Projects cards hover animation */
+.card:hover {
+    transform: translateY(-15px); /* Lift the card slightly on hover */
+    box-shadow: 0 10px 16px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
+/* ========== BUTTON STYLES ========== */
+
+/* Button container layout */
+.button-container {
+    display: flex;
+    justify-content: space-evenly; 
+    gap: 20px; /* Adds space between buttons */
+    width: 100%; /* Ensure container takes up full width */
+    margin-top: 20px; 
+}
+
+/* Button container styles */
+.container {
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+    background-color: #2d2d2d;
+    border-radius: 10px;
+    padding: 8px 16px; /* Reduced padding for a smaller button */
+    color: white;
+    font-size: 17px; 
+    text-align: center;
+    width: 120px; /* Fixed width for button */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    overflow: hidden; /* Prevent the shine effect from spilling out */
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+/* Hover effect for button */
+.container:hover {
+    background-color: rgba(232, 169, 53, 0.68);
+    box-shadow: 0px 0px 15px rgba(255, 165, 0, 0.6);
+}
+
+/* Shine effect using pseudo-element */
+.container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 20%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 100%);
+    opacity: 0;
+    transition: left 0.5s ease, opacity 0.5s ease;
+    transform: skew(-10deg);
+}
+
+/* On hover: Shine effect moves across the button */
+.container:hover::before {
+    opacity: 1;
+    left: 100%; /* Moves the shine across the button */
+}
+
+.button {
+    position: relative;
+    z-index: 1; /* Ensure text is above the shine */
+}
+
+/* ========== RESPONSIVE DESIGN STYLES ========== */
+
+/* For screens smaller than 1440px */
+@media (max-width: 1440px) {
+    h1 {
+        margin-left: 7%;
+    }
+    h2 {
+        margin-left: 20%;
+    }
+}
+
+/* For screens smaller than 1230px */
+@media (max-width: 1230px) {
+    h1 {
+        margin-left: 0%;
+    }
+    h2 {
+        margin-left: 17%;
+    }
+}
+
+/* For screens smaller than 1115px */
+@media (max-width: 1115px) {
+    h2 {
+        margin-left: 20%;
+        width: 70%;
+    }
+}
+
+/* For screens smaller than 1024px */
+@media (max-width: 1024px) {
+    .card {
+        width: 600px;
+    }
+    .card img {
+        height: 450px;
+    }
+}
+
+/* For screens smaller than 969px */
+@media (max-width: 969px) {
+    .card {
+        width: 500px;
+    }
+    .card img {
+        height: 380px;
+    }
+}
+
+/* For screens smaller than 930px */
+@media (max-width: 930px) {
+    h2 {
+        font-size: 17px;
+    }
+    .card-container {
+        margin-left: 100px;
+    }
+}
+
+/* For screens smaller than 768px */
+@media (max-width: 768px) {
+    h2 {
+        margin-left: 4%;
+        width: 80%;
+    }
+    .card-container {
+        margin-left: -5%;
+    }
+}
+
+/* For screens smaller than 722px */
+@media (max-width: 722px) {
+    h2 {
+        margin-left: 7%;
+        width: 80%;
+    }
+    .card-container {
+        margin-left: 0px;
+    }
+    .card {
+        width: 475px;
+    }
+    .card img {
+        height: 380px;
+    }
+}
+
+/* For screens smaller than 700px */
+@media (max-width: 700px) {
+    .card-container {
+        margin-left: -5%;
+    }
+    .card img {
+        height: 300px;
+    }
+}
+
+/* For screens smaller than 630px */
+@media (max-width: 630px) {
+    .card-container {
+        margin-left: -8%;
+    }
+    .card {
+        width: 400px;
+    }
+    .card img {
+        height: 310px;
+    }
+    .card-content h3 {
+        font-size: 25px;
+    }
+    .card-content p {
+        font-size: 15px;
+    }
+    .container {
+        padding: 5px 14px;
+    }
+    .button {
+        font-size: 16px;
+    }
+}
+
+/* For screens smaller than 610px */
+@media (max-width: 610px) {
+    h1 {
+        margin-left: -16%;
+    }
+    h2 {
+        margin-left: -10%;
+        width: 100%;
+    }
+    .card {
+        width: 600px;
+    }
+    .card-container {
+        margin-left: -15%;
+        margin-right: 5%;
+    }
+}
+
+/* For screens smaller than 570px */
+@media (max-width: 570px) {
+    .card {
+        width: 460px;
+    }
+}
+
+/* For screens smaller than 520px */
+@media (max-width: 520px) {
+    h1 {
+        margin-left: -20%;
+    }
+    h2 {
+        margin-left: -15%;
+        font-size: 15px;
+    }
+    .card-container {
+        margin-left: -25%;
+        margin-right: 3%;
+    }
+}
+
+/* For screens smaller than 425px */
+@media (max-width: 425px) {
+    h1 {
+        font-size: 30px;
+        margin-left: -40%;
+    }
+    h2 {
+        font-size: 15px;
+        margin-left: -20%;
+    }
+    .card-container {
+        margin-left: -40%;
+        margin-right: 0%;
+    }
+}
+
+/* For screens smaller than 375px */
+@media (max-width: 375px) {
+    h1 {
+        font-size: 25px;
+        margin-left: -30%;
+    }
+    h2 {
+        font-size: 15px;
+        margin-left: -20%;
+    }
+    .card-container {
+        margin-left: -35%;
+        margin-right: 5%;
+    }
+    .card-content h3 {
+        font-size: 20px;
+    }
+    .card-content p {
+        font-size: 12px;
+    }
+    .container {
+        padding: 0px 13px;
+    }
+    .button {
+        font-size: 12px;
+    }
+    .card img {
+        height: 200px;
+    }
+}
+
+/* For screens smaller than 325px */
+@media (max-width: 325px) {
+    .container {
+        padding: 0px 10px;
+    }
+    .button {
+        font-size: 11px;
+    }
+}
+
+/* For screens smaller than 308px */
+@media (max-width: 308px) {
+    .container {
+        padding: 0px 0px;
+    }
+}

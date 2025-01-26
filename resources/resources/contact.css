@@ -1,0 +1,506 @@
+/* ========== CONTACT SECTION ========== */
+
+/* Contact container styling */
+.contact-container {
+    width: 100%;
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    margin-left: 37%;
+}
+
+/* Contact form header */
+.contact-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: orangered;
+}
+
+/* Form input and textarea styling */
+form input, form textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+/* Textarea specific styling */
+form textarea {
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+/* Focus state for form inputs and textareas */
+form input:focus, form textarea:focus {
+    outline: none;
+    box-shadow: 0 0 5px orangered;
+}
+
+/* Submit button styling */
+form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: orangered;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+/* Submit button hover effect */
+form button:hover {
+    background-color: #555;
+}
+
+/* ========== FOOTER SECTION ========== */
+
+/* General footer styling */
+footer {
+    background: #343434;
+    padding-top: 50px;
+    color: white;
+    margin-top: 9.5%;
+}
+
+/* Footer container styling */
+.footer-container {
+    width: 1140px;
+    height: 150px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Footer section title styling */
+h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    text-align: center;
+    color: white;
+}
+
+/* Footer content section styling */
+.footer-details, .footer-content, .socials {
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+}
+
+/* Footer section text styling */
+.footer-details p, .footer-content p {
+    margin: auto;
+    padding: 7px;
+    color: white;
+}
+
+/* Unordered list styling for footer links */
+.footer-content ul, .list {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+/* Footer list items styling */
+.list li {
+    width: auto;
+    text-align: center;
+    list-style-type: none;
+    padding: 7px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Hover effect for footer list items */
+.list li::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background: orangered;
+    transition: width 0.5s ease-in-out, background 0.3s ease-in-out;
+}
+
+.list li:hover::before {
+    width: 15%;
+    background: orangered;
+}
+
+/* Social icons container */
+.socials ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-flex;
+    gap: 10px;
+}
+
+/* Styling for each social icon */
+.socials li {
+    display: inline-block;
+    position: relative;
+    padding: 5px;
+    overflow: hidden;
+}
+
+/* Hover underline effect on social icons */
+.socials li::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background: orangered;
+    transition: width 0.5s ease-in-out;
+}
+
+.socials li:hover::after {
+    width: 100%;
+}
+
+/* Social icon styling */
+.socials i {
+    color: white;
+    font-size: 25px;
+    background: none !important;
+    padding: 0 !important;
+    transition: none;
+}
+
+/* Prevent color change on social icon hover */
+.socials li:hover i {
+    color: inherit !important;
+}
+
+/* Prevent background and color changes on <a> tags inside social icons */
+.socials li a {
+    text-decoration: none;
+    color: inherit !important;
+    background: none !important;
+}
+
+.socials li a:hover {
+    color: inherit !important;
+    background: none !important;
+}
+
+/* Bottom bar styling */
+.bottom-bar {
+    background: orangered;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 50px;
+}
+
+/* Bottom bar text styling */
+.bottom-bar p {
+    color: black;
+    margin: 0;
+    font-size: 16px;
+    padding-left: 10%;
+}
+
+/* ========== RESPONSIVE DESIGN ========== */
+
+/* Responsive breakpoints */
+@media (max-width: 1440px) {
+    footer {
+        padding-top: 23px;
+        margin-top: 8.5%;
+    }
+
+    .footer-container {
+        width: 1000px;
+        margin-left: 23%;
+        height: 100%;
+    }
+}
+
+@media (max-width: 1250px) {
+    .contact-container {
+        margin-left: 30%;
+    }
+
+    footer {
+        margin-top: 9.5%;
+    }
+
+    .footer-container {
+        margin-left: 18%;
+    }
+
+    h3 {
+        font-size: 23px;
+    }
+
+    .footer-details p {
+        padding: 5px;
+    }
+}
+
+/* Further responsive styling for smaller screens */
+@media (max-width: 1130px) {
+    footer {
+        margin-top: 10.5%;
+    }
+
+    .footer-content, .socials {
+        margin-left: -30%;
+    }
+
+    .footer-container {
+        margin-left: 16%;
+    }
+
+    .bottom-bar p {
+        margin-left: 12%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .contact-container {
+        max-width: 600px;
+        margin-left: 31%;
+    }
+
+    footer {
+        margin-top: 11.6%;
+    }
+
+    .footer-container {
+        width: 810px;
+        margin-left: 20%;
+    }
+}
+
+@media (max-width: 950px) {
+    footer {
+        margin-top: 12.5%;
+    }
+
+    .contact-container {
+        max-width: 560px;
+        margin-left: 32%;
+    }
+}
+
+@media (max-width: 880px) {
+    .contact-container {
+        margin-left: 30%;
+    }
+
+    .footer-container {
+        margin-left: 17%;
+    }
+}
+
+@media (max-width: 840px) {
+    .contact-container {
+        max-width: 500px;
+        margin-left: 32%;
+    }
+
+    .footer-content {
+        display: none;
+    }
+
+    .footer-container {
+        width: 600px;
+        margin-left: 28%;
+        height: 68px;
+    }
+
+    .socials {
+        margin-left: -15%;
+    }
+
+    footer {
+        margin-top: 26.6%;
+    }
+
+    .bottom-bar p {
+        margin-left: 20%;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-container {
+        margin-left: 23%;
+    }
+
+    .footer-container {
+        margin-left: 19%;
+    }
+
+    .bottom-bar p {
+        margin-left: 2%;
+    }
+}
+
+@media (max-width: 720px) {
+    footer {
+        margin-top: 28%;
+    }
+
+    .contact-container {
+        margin-left: 22%;
+    }
+}
+
+@media (max-width: 690px) {
+    footer {
+        margin-top: 29%;
+    }
+
+    .footer-container {
+        margin-left: 15%;
+    }
+
+    .contact-container {
+        margin-left: 23%;
+        max-width: 460px;
+    }
+}
+
+@media (max-width: 620px) {
+    .contact-container {
+        margin-left: 25%;
+        max-width: 400px;
+    }
+
+    .footer-container {
+        margin-left: 12%;
+    }
+
+    footer {
+        margin-top: 33%;
+    }
+}
+
+@media (max-width: 610px) {
+    h3 {
+        font-size: 20px;
+    }
+
+    .footer-details p {
+        font-size: 12px;
+    }
+
+    .contact-container {
+        margin-left: 16%;
+    }
+
+    .footer-container {
+        margin-left: 4%;
+        height: 100%;
+    }
+
+    .bottom-bar p {
+        margin-left: 0%;
+    }
+
+    .socials i {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 550px) {
+    .contact-container {
+        margin-left: 14%;
+    }
+
+    .footer-container {
+        margin-left: 0%;
+    }
+}
+
+@media (max-width: 520px) {
+    .contact-container {
+        margin-left: 12%;
+    }
+
+    .footer-container {
+        width: 500px;
+        margin-left: 0%;
+    }
+
+    .bottom-bar p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-container {
+        margin-left: 9%;
+        max-width: 350px;
+    }
+
+    .footer-container {
+        width: 400px;
+        margin-left: 5%;
+    }
+}
+
+@media (max-width: 425px) {
+    .contact-container {
+        margin-left: 15%;
+        max-width: 300px;
+    }
+
+    .contact-container h1 {
+        font-size: 25px;
+    }
+
+    .footer-container {
+        width: 365px;
+        margin-left: 5%;
+    }
+
+    .footer-details, .socials {
+        margin-left: 0%;
+    }
+}
+
+@media (max-width: 375px) {
+    .contact-container {
+        margin-left: 10%;
+    }
+}
+
+@media (max-width: 360px) {
+    .contact-container {
+        margin-left: 7%;
+    }
+}
+
+@media (max-width: 340px) {
+    .contact-container {
+        margin-left: 7%;
+    }
+
+    .footer-container {
+        margin-left: -3%;
+    }
+}
+
+@media (max-width: 320px) {
+    .contact-container {
+        margin-left: 3%;
+    }
+}

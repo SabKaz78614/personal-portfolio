@@ -1,31 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
+    <!-- Google Fonts and CSS Links -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./resources/navbar.css"/>
-    <link rel="stylesheet" href="./resources/about.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"/>
-
+    <link rel="stylesheet" href="./resources/navbar.css">
+    <link rel="stylesheet" href="./resources/about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
 </head>
+
 <body>
-    <input type="checkbox" id="menu-toggle" style="display: none;"/>
+    <!-- Mobile Menu Toggle -->
+    <input type="checkbox" id="menu-toggle" style="display: none;">
     <label for="menu-toggle" class="hamburger-menu">
         <i class="fa-solid fa-bars"></i>
     </label>
-    
+
+    <!-- Navigation Bar -->
     <nav>
         <div class="logo">
-            <img src="./resources/logo1.jpg" alt="">
+            <img src="./resources/logo1.jpg" alt="Logo">
             <span class="name">Sabreena's</span>
             <span class="portfolio">Portfolio</span>
         </div>
-
         <ul class="nav-links">
+            <!-- Navigation Links -->
             <li><a href="index.html">
                 <i class="fa-solid fa-house"></i>
                 <span class="nav-item">Home</span>
@@ -43,34 +47,32 @@
                 <span class="nav-item">Contacts</span>
             </a></li>
         </ul>
-    </nav>    
-    
+    </nav>
+
+    <!-- About Me Section -->
     <div class="about">
         <h1>About Me</h1>
-        
         <p>
-        Hello! My name is Sabreena, and I am a front-end developer. With a passion for coding, 
-        I have honed my skills in HTML, CSS and Javascript. My self-taught journey includes valuable experiences from 
-        self learning programs, which have shaped my expertise and character.
-        <br>
-        <br>
-        My journey into coding started a few years ago when I realized my love for both creativity and technology. 
-        I decided to take the self-taught route, diving into online resources, tutorials, and building personal projects. 
-        Through persistence and countless hours of practice, I’ve developed a solid understanding of front-end technologies and web design principles.
-        <br>
-        <br>
-        I also plan to continue learning and developing the skills I have learnt when I finish my Course as well as new programming languages like app development such
-        as Kotlin and other tools such as Figma.
+            Hello! My name is Sabreena, and I am a front-end developer. With a passion for coding, 
+            I have honed my skills in HTML, CSS, and JavaScript. My self-taught journey includes valuable experiences from 
+            self-learning programs, which have shaped my expertise and character.
+        </p>
+        <p>
+            My journey into coding started a few years ago when I realized my love for both creativity and technology. 
+            I decided to take the self-taught route, diving into online resources, tutorials, and building personal projects. 
+            Through persistence and countless hours of practice, I’ve developed a solid understanding of front-end technologies and web design principles.
+        </p>
+        <p>
+            I also plan to continue learning and developing the skills I have learned when I finish my course, as well as explore new programming languages like Kotlin for app development and tools such as Figma.
         </p>
     </div>
 
-    <!-- EDUCATION SECTION -->
-
+    <!-- Education Section -->
     <div class="education-section">
         <h2 class="section-subtitle">Qualification</h2>
         <h2 class="section-title">My Education</h2>
-
         <div class="education-container grid">
+            <!-- Education Details -->
             <div class="education-content">
                 <div>
                     <h3 class="education-year">July 2023 to April 2025</h3>
@@ -85,7 +87,6 @@
                     <span class="education-specialty">Frontend</span>
                 </div>
             </div>
-
             <div class="education-content">
                 <div>
                     <h3 class="education-year">Sept 2019 to Dec 2020</h3>
@@ -100,7 +101,6 @@
                     <span class="education-specialty">Accounting and Finance</span>
                 </div>
             </div>
-
             <div class="education-content">
                 <div>
                     <h3 class="education-year">Sept 2015 to Dec 2019</h3>
@@ -115,88 +115,74 @@
                     <span class="education-specialty">Accounting and Finance</span>
                 </div>
             </div>
-
         </div>
     </div>
 
-    <!-- WORK SECTION -->
-
-        <div class="work-section">
-            <h2 class="section-title">Work Experience</h2>
-    
-            <div class="work-container grid">
-                <div class="work-content">
-                    <div>
-                        <h3 class="work-year">June 2022- Present</h3>
-                    </div>
-                    <div class="work-time">
-                        <span class="work-rounder"></span>
-                        <span class="work-line"></span>
-                    </div>
-                    <div>
-                        <h3 class="work-race">Clarke-Telecom</h3>
-                        <span class="work-specialty">Acquisition Administrator</span>
-                        
-                    </div>
+    <!-- Work Experience Section -->
+    <div class="work-section">
+        <h2 class="section-title">Work Experience</h2>
+        <div class="work-container grid">
+            <div class="work-content">
+                <div>
+                    <h3 class="work-year">June 2022 - Present</h3>
                 </div>
-            </div> 
+                <div class="work-time">
+                    <span class="work-rounder"></span>
+                    <span class="work-line"></span>
+                </div>
+                <div>
+                    <h3 class="work-race">Clarke-Telecom</h3>
+                    <span class="work-specialty">Acquisition Administrator</span>
+                </div>
+            </div>
         </div>
+    </div>
 
-    <!-- SKILLS SECTION -->
-
+    <!-- Skills Section -->
     <div class="skills">
         <h3>Skills</h3>
-        <p>Below are the skills I have learned thoughout my course:</p>
-
+        <p>Below are the skills I have learned throughout my course:</p>
         <div class="skills-content grid">
+            <!-- Individual Skill Icons and Names -->
             <div class="skills-box">
-                <img src="./resources/skills/html-1.svg" alt="HTML_img" class="skills-img">
+                <img src="./resources/skills/html-1.svg" alt="HTML Icon" class="skills-img">
                 <span class="skills-name">HTML</span>
             </div>
-
             <div class="skills-box">
-                <img src="./resources/skills/css-3.svg" alt="CSS_img" class="skills-img">
+                <img src="./resources/skills/css-3.svg" alt="CSS Icon" class="skills-img">
                 <span class="skills-name">CSS</span>
             </div>
-
             <div class="skills-box">
-                <img src="./resources/skills/javascript-1.svg" alt="Javascript_img" class="skills-img">
-                <span class="skills-name">Javascript</span>
+                <img src="./resources/skills/javascript-1.svg" alt="JavaScript Icon" class="skills-img">
+                <span class="skills-name">JavaScript</span>
             </div>
-
             <div class="skills-box">
-                <img src="./resources/skills/git-icon.svg" alt="Git_img" class="skills-img">
+                <img src="./resources/skills/git-icon.svg" alt="Git Icon" class="skills-img">
                 <span class="skills-name">Git</span>
             </div>
-
             <div class="skills-box">
-                <img src="./resources/skills/github-icon-1.svg" alt="Github_img" class="skills-img">
+                <img src="./resources/skills/github-icon-1.svg" alt="GitHub Icon" class="skills-img">
                 <span class="skills-name">GitHub</span>
             </div>
-
             <div class="skills-box">
-                <img src="./resources/skills/visual-studio-code-1.svg" alt="Vs-Code_img" class="skills-img">
+                <img src="./resources/skills/visual-studio-code-1.svg" alt="VS Code Icon" class="skills-img">
                 <span class="skills-name">VS Code</span>
             </div>
-
             <div class="skills-box">
-                <img src="./resources/skills/nodejs-3.svg" alt="NodeJS_img" class="skills-img">
+                <img src="./resources/skills/nodejs-3.svg" alt="NodeJS Icon" class="skills-img">
                 <span class="skills-name">NodeJS</span>
             </div>
-
             <div class="skills-box">
-                <img src="./resources/skills/react-2.svg" alt="React_img" class="skills-img">
+                <img src="./resources/skills/react-2.svg" alt="React Icon" class="skills-img">
                 <span class="skills-name">React</span>
             </div>
-
             <div class="skills-box">
-                <img src="./resources/skills/redux.svg" alt="Redux_img" class="skills-img">
+                <img src="./resources/skills/redux.svg" alt="Redux Icon" class="skills-img">
                 <span class="skills-name">Redux</span>
             </div>
         </div>
     </div>
 
-    
-    
 </body>
+
 </html>
