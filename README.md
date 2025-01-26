@@ -4,6 +4,12 @@ This is an overview for my portfolio.
 
 This project is a visually appealing web layout using HTML and CSS. It features responsive design, interactive card elements with hover effects, and a modern button with a glowing shine effect. The layout is designed to adapt to various screen sizes, making it mobile-friendly.
 
+## Demo
+![Responsice Mockup](./Media/main-page.png)
+![Responsice Mockup](./Media/About-section.png)
+![Responsice Mockup](./Media/Projects-section.png)
+![Responsice Mockup](./Media/Contact-section.png)
+
 ## Features
 - **Responsive Design**: The layout adjusts for multiple screen sizes, ensuring a seamless experience on desktops, tablets, and mobile devices.
 - **Card Hover Effects**: Cards have hover animations with zoom-out effects and a glowing box shadow for an interactive user experience.
